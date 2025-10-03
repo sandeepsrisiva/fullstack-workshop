@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two-Day Full Stack Development Workshop</title>
+    <style>
+        @media print {
+            body { margin: 0; padding: 20px; }
+            .no-print { display: none; }
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            color: #333;
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 4px solid #2563eb;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            color: #1e40af;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #64748b;
+            font-size: 18px;
+        }
+        
+        .day-header {
+            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+            color: white;
+            padding: 15px 20px;
+            margin: 30px 0 20px 0;
+            border-radius: 8px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .session {
+            background: #f8fafc;
+            border-left: 4px solid #3b82f6;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .session-title {
+            color: #1e40af;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .time-block {
+            background: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .time {
+            color: #2563eb;
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+        
+        .topic {
+            color: #0f172a;
+            font-weight: 600;
+            margin: 10px 0 5px 0;
+        }
+        
+        ul {
+            margin: 5px 0;
+            padding-left: 25px;
+        }
+        
+        li {
+            margin: 5px 0;
+            color: #475569;
+        }
+        
+        .break {
+            background: #fef3c7;
+            padding: 10px 15px;
+            margin: 15px 0;
+            border-radius: 6px;
+            border-left: 4px solid #f59e0b;
+            font-weight: bold;
+            color: #92400e;
+        }
+        
+        .checklist {
+            background: #f0fdf4;
+            border: 2px solid #22c55e;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        
+        .checklist-title {
+            color: #15803d;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .checkbox-item {
+            margin: 8px 0;
+            color: #166534;
+        }
+        
+        .deliverables {
+            background: #eff6ff;
+            border: 2px solid #3b82f6;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        
+        .deliverables-title {
+            color: #1e40af;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .btn-download {
+            background: #2563eb;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .btn-download:hover {
+            background: #1e40af;
+        }
+        
+        .materials {
+            background: #fef3c7;
+            border: 2px solid #f59e0b;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        
+        .materials-title {
+            color: #92400e;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="header">
+        <h1>Two-Day Full Stack Development Workshop</h1>
+        <p class="subtitle">MongoDB, Mongoose, Express.js & React.js</p>
+    </div>
+
+    <div class="day-header">📅 Day 1: Backend Fundamentals (MongoDB, Express.js)</div>
+
+    <div class="session">
+        <div class="session-title">Session 1: Morning (9:00 AM - 12:30 PM)</div>
+        
+        <div class="time-block">
+            <div class="time">⏰ 9:00 - 10:00 AM: Environment Setup & MongoDB</div>
+            
+            <div class="topic">Installation & Setup (30 mins)</div>
+            <ul>
+                <li>Install Node.js and npm</li>
+                <li>Install MongoDB Community Edition</li>
+                <li>Install MongoDB Compass (GUI tool)</li>
+                <li>Install Postman for API testing</li>
+                <li>Set up VS Code with extensions (ES7+ React/Redux, MongoDB for VS Code)</li>
+            </ul>
+            
+            <div class="topic">MongoDB Basics (30 mins)</div>
+            <ul>
+                <li>Understanding databases, collections, and documents</li>
+                <li>Starting MongoDB server</li>
+                <li>Using MongoDB Compass to create database</li>
+                <li>Creating collections and inserting records manually</li>
+                <li>Basic CRUD operations demonstration</li>
+            </ul>
+        </div>
+
+        <div class="break">☕ Break (10 mins)</div>
+
+        <div class="time-block">
+            <div class="time">⏰ 10:10 - 12:30 PM: Express.js & Mongoose</div>
+            
+            <div class="topic">Express.js Introduction (45 mins)</div>
+            <ul>
+                <li>Creating a basic Express server</li>
+                <li>Understanding routing (GET, POST, PUT, DELETE)</li>
+                <li>HTTP methods and status codes</li>
+                <li>Testing routes with Postman</li>
+                <li>Hands-on: Build a simple REST API structure</li>
+            </ul>
+            
+            <div class="topic">Middleware Concepts (35 mins)</div>
+            <ul>
+                <li>What is middleware and execution flow</li>
+                <li>Built-in middleware (express.json, express.static)</li>
+                <li>Custom middleware examples</li>
+                <li>Error handling middleware</li>
+                <li>Hands-on: Create logging and validation middleware</li>
+            </ul>
+            
+            <div class="topic">Mongoose Integration (40 mins)</div>
+            <ul>
+                <li>Installing and connecting Mongoose to MongoDB</li>
+                <li>Creating schemas and models</li>
+                <li>CRUD operations with Mongoose</li>
+                <li>Hands-on: Build a complete Student/Product API</li>
+            </ul>
+        </div>
+
+        <div class="break">🍽️ Lunch Break (1 hour)</div>
+    </div>
+
+    <div class="session">
+        <div class="session-title">Session 2: Afternoon (1:30 PM - 5:00 PM)</div>
+        
+        <div class="time-block">
+            <div class="time">⏰ 1:30 - 3:00 PM: Complete Backend Project</div>
+            
+            <div class="topic">Mini Project: Student Management API</div>
+            <ul>
+                <li>Design schema for students (name, email, age, courses)</li>
+                <li>Implement all CRUD routes</li>
+                <li>Add validation middleware</li>
+                <li>Error handling</li>
+                <li>Test all endpoints with Postman</li>
+                <li>Students build along with instructor</li>
+            </ul>
+        </div>
+
+        <div class="break">☕ Break (15 mins)</div>
+
+        <div class="time-block">
+            <div class="time">⏰ 3:15 - 5:00 PM: Practice & Debugging</div>
+            <ul>
+                <li>Students complete their APIs independently</li>
+                <li>Instructor helps with debugging</li>
+                <li>Q&A session</li>
+                <li>Brief introduction to Day 2 topics</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="day-header">📅 Day 2: Frontend with React.js & Integration</div>
+
+    <div class="session">
+        <div class="session-title">Session 1: Morning (9:00 AM - 12:30 PM)</div>
+        
+        <div class="time-block">
+            <div class="time">⏰ 9:00 - 10:30 AM: React.js Setup & Fundamentals</div>
+            
+            <div class="topic">Environment Setup (20 mins)</div>
+            <ul>
+                <li>Create React app using Vite or Create React App</li>
+                <li>Understanding project structure</li>
+                <li>Installing Axios for API calls</li>
+            </ul>
+            
+            <div class="topic">React Core Concepts (70 mins)</div>
+            <ul>
+                <li>Components and JSX</li>
+                <li><strong>Conditional Rendering:</strong>
+                    <ul>
+                        <li>if/else statements</li>
+                        <li>Ternary operators</li>
+                        <li>Logical && operator</li>
+                        <li>Practical examples: show/hide elements, loading states</li>
+                    </ul>
+                </li>
+                <li><strong>Rendering Lists:</strong>
+                    <ul>
+                        <li>Using .map() to render arrays</li>
+                        <li>Keys and their importance</li>
+                        <li>Filtering and sorting lists</li>
+                        <li>Hands-on: Display list of students</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="break">☕ Break (10 mins)</div>
+
+        <div class="time-block">
+            <div class="time">⏰ 10:40 - 12:30 PM: React Forms & State Management</div>
+            
+            <div class="topic">React Forms (60 mins)</div>
+            <ul>
+                <li>Controlled vs uncontrolled components</li>
+                <li>Handling form inputs with useState</li>
+                <li>Form submission and validation</li>
+                <li>Multiple input handling</li>
+                <li>Hands-on: Create student registration form</li>
+            </ul>
+            
+            <div class="topic">State & Effects (50 mins)</div>
+            <ul>
+                <li>useState for managing data</li>
+                <li>useEffect for API calls</li>
+                <li>Fetching data on component mount</li>
+                <li>Hands-on: Connect form to backend API</li>
+            </ul>
+        </div>
+
+        <div class="break">🍽️ Lunch Break (1 hour)</div>
+    </div>
+
+    <div class="session">
+        <div class="session-title">Session 2: Afternoon (1:30 PM - 5:00 PM)</div>
+        
+        <div class="time-block">
+            <div class="time">⏰ 1:30 - 3:30 PM: Full Stack Integration Project</div>
+            
+            <div class="topic">Building Complete CRUD Application</div>
+            <ul>
+                <li>Display list of students (GET request)</li>
+                <li>Add new student through form (POST request)</li>
+                <li>Update student details (PUT request)</li>
+                <li>Delete student (DELETE request)</li>
+                <li>Loading states and error handling</li>
+                <li>Conditional rendering for empty states</li>
+                <li>Students build along with instructor</li>
+            </ul>
+        </div>
+
+        <div class="break">☕ Break (15 mins)</div>
+
+        <div class="time-block">
+            <div class="time">⏰ 3:45 - 5:00 PM: Finalization & Best Practices</div>
+            <ul>
+                <li>Students complete their projects</li>
+                <li>Code review and best practices</li>
+                <li>Deployment basics (optional):
+                    <ul>
+                        <li>Backend: Render/Railway</li>
+                        <li>Frontend: Vercel/Netlify</li>
+                    </ul>
+                </li>
+                <li><strong>Q&A and Wrap-up</strong></li>
+                <li>Next steps and resources for continued learning</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="checklist">
+        <div class="checklist-title">✅ Required Tools Checklist</div>
+        <div class="checkbox-item">☐ Node.js (LTS version)</div>
+        <div class="checkbox-item">☐ MongoDB Community Edition</div>
+        <div class="checkbox-item">☐ MongoDB Compass</div>
+        <div class="checkbox-item">☐ VS Code</div>
+        <div class="checkbox-item">☐ Postman</div>
+        <div class="checkbox-item">☐ Git (optional but recommended)</div>
+    </div>
+
+    <div class="deliverables">
+        <div class="deliverables-title">🎯 Key Deliverables</div>
+        <ul>
+            <li>Fully functional REST API with MongoDB</li>
+            <li>React frontend with forms and lists</li>
+            <li>Complete full-stack CRUD application</li>
+            <li>Understanding of request-response cycle</li>
+            <li>Hands-on experience with all mentioned technologies</li>
+        </ul>
+    </div>
+
+    
+</body>
+</html>
